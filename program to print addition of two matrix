@@ -1,0 +1,48 @@
+//program to print addition of two matrix
+
+
+#include<stdio.h>
+int main()
+{                                      //tip: take two matrix and so their sum and store it in the third matrix
+                                      //after that print the  third matrix same as the norml matrix
+int i,j,a[3][3], b[3][3], c[3][3];
+
+printf("enter the elements for 3 by 3 matrix\n");
+for(i=0; i<3; i++)
+{
+for(j=0; j<3; j++)
+{
+scanf("%d", &a[i][j]);
+
+
+}
+}
+printf("enter the elements for 2nd 3 by 3 matrix\n");
+for(i=0; i<3; i++)
+{
+for(j=0; j<3; j++)
+{
+scanf("%d", &b[i][j]);
+
+
+}
+}
+
+for(i=0; i<3; i++)
+{
+
+    for(j=0; j<3; j++)
+    {
+
+
+       c[i][j]=a[i][j]+b[i][j];
+       printf("%d\t", c[i][j]);
+    }
+    printf("\n");
+}
+
+
+}
+
+
+
