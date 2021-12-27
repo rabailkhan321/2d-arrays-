@@ -1,0 +1,49 @@
+
+
+
+#include<stdio.h>
+int main()
+{
+int i,j,sc,sr, sum=0;
+int a[3][3];
+printf("enter the elements for 3 by 3 matrix\n");
+for(i=0; i<3; i++)
+{
+for(j=0; j<3; j++)
+{
+scanf("%d", &a[i][j]);
+
+
+}
+}
+
+/*for(i=0; i<2; i++)
+{
+for(j=0; j<3; j++)
+{
+printf("%d\t", a[i][j]);
+
+
+}
+printf("\n");
+}*/
+for(i=0; i<3; i++)
+{
+      sc=0, sr=0;   //initialize sc and sr here so that after every iteration it becomes 0
+
+    for(j=0; j<3; j++)    
+    {
+
+
+       sr=sr+a[i][j];
+       sc=sc+a[j][i];
+
+    }
+   printf("sr=%d sc=%d\n", sr, sc);
+}
+
+
+}
+
+
+
